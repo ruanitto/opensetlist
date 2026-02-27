@@ -1,0 +1,19 @@
+{
+  "opensetlist": {
+    "common_appName": {
+      "full": "OpenSetList React Native",
+      "initials": "RNB"
+    },
+    "common_error": "Ops! Algo deu errado.",
+    "screen_example": {
+      "hello_user": "Olá, meu nome é {{name}}",
+      "title": "Bem-vindo ao $t(common_appName.full)",
+      "description": "Quer descobrir alguns recursos? Basta clicar em um dos três botões na parte inferior da tela. O primeiro permite chamar uma API REST. O segundo permite alterar a cor do tema. E o terceiro permite alterar o idioma."
+    },
+    "error_boundary": {
+      "title": "Ops! Algo deu errado.",
+      "description": "Pedimos desculpas pelo inconveniente. Por favor, tente novamente mais tarde.",
+      "cta": "Recarregar a tela"
+    }
+  }
+}

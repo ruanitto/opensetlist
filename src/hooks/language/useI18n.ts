@@ -7,11 +7,25 @@ const changeLanguage = (lang: SupportedLanguages) => {
 };
 
 const toggleLanguage = () => {
-  void i18next.changeLanguage(
-    i18next.language === (SupportedLanguages.EN_EN as string)
-      ? SupportedLanguages.FR_FR
-      : SupportedLanguages.EN_EN,
-  );
+  const currentLang = i18next.language as SupportedLanguages;
+  let nextLang: SupportedLanguages;
+
+  switch (currentLang) {
+    case SupportedLanguages.EN_EN: {
+      nextLang = SupportedLanguages.FR_FR;
+      break;
+    }
+    case SupportedLanguages.FR_FR: {
+      nextLang = SupportedLanguages.PT_BR;
+      break;
+    }
+    default: {
+      nextLang = SupportedLanguages.EN_EN;
+      break;
+    }
+  }
+
+  void i18next.changeLanguage(nextLang);
 };
 
 export const useI18n = () => {

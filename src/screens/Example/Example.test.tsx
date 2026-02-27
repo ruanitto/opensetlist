@@ -49,6 +49,10 @@ describe('Example screen should render correctly', () => {
     expect(button).toBeDefined();
     fireEvent.press(button);
 
+    expect(i18n.language).toBe(SupportedLanguages.PT_BR);
+
+    fireEvent.press(button);
+
     expect(i18n.language).toBe(SupportedLanguages.EN_EN);
   });
 

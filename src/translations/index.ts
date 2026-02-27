@@ -7,18 +7,20 @@ import type { Language } from '@/hooks/language/schema';
 
 import en from './en-EN.json';
 import fr from './fr-FR.json';
+import pt from './pt-BR.json';
 
 export const defaultNS = 'opensetlist';
 
 export const resources = {
   'en-EN': en,
   'fr-FR': fr,
+  'pt-BR': pt,
 } as const satisfies Record<Language, unknown>;
 
 void i18n.use(initReactI18next).init({
   defaultNS,
-  fallbackLng: 'fr-FR',
-  lng: 'fr-FR',
+  fallbackLng: 'pt-BR',
+  lng: 'pt-BR',
   resources,
 });
 

@@ -79,3 +79,4 @@ yarn-error.log
 
 # vscode
 .vscode/*
+.kiro/*
