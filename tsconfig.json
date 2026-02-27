@@ -1,0 +1,22 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "types": ["react-native", "jest", "node"],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "noUnusedLocals": true
+  },
+  "include": [
+    "src/tests/**/*",
+    "./src/**/*",
+    "index.d.ts",
+    "*.mjs",
+    ".*.mjs",
+    "*.js",
+    ".*.js",
+    "*.ts",
+    ".prettierrc.mjs"
+  ],
+  "exclude": ["**/node_modules", "_", "android", "ios", "**/Pods"]
+}
